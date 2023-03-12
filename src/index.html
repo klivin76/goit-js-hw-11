@@ -8,7 +8,7 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <div class="search-form__wrapper">
+    <div class="search-form-wrapper">
       <form class="search-form" id="search-form">
         <input
           type="text"
@@ -16,10 +16,26 @@
           autocomplete="off"
           placeholder="Search images..."
         />
-        <button class="button" type="submit">Search</button>
+        <button type="submit" class="search-button">Search</button>
       </form>
     </div>
+
     <div class="gallery"></div>
-    <button type="button" class="load-more">Load more</button>   
+
+    <button
+      type="button"
+      class="load-more-btn is-hidden"
+      data-action="load-more"
+    >
+      <div class="spinner is-hidden">
+        <!-- <div></div>
+        <div></div>
+        <div></div>
+        <div></div> -->
+      </div>
+
+      <span class="label">Load more</span>
+    </button>
+   
   </body>
 </html>
